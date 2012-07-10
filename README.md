@@ -28,8 +28,8 @@ This tool logs into their web portal when needed; your connection will die for o
 ## How it works
 
 -	Use the `airport` command-line utility to confirm that we are both connected to a Wi-Fi network and that the Wi-Fi network's SSID is `LBH-Libraries`.
--	If the above is true, determine if we need to re-login by attempting to HTTP GET `http://www.pip-installer.org/en/latest/installing.html`; it times out if we don't need to log in, and redirects to a login page if we do need to log in.
--	If we need to log in, HTTP POST to `http://www.pip-installer.org/en/latest/installing.html` with appropriate `x-url-form-encoded` content, cookies, and referrer.
+-	If the above is true, determine if we need to re-login by attempting to HTTP GET `https://securelogin.arubanetworks.com/`; it times out if we don't need to log in, and redirects to a login page if we do need to log in.
+-	If we need to log in, HTTP POST to `https://securelogin.arubanetworks.com/cgi-bin/login` with appropriate `x-url-form-encoded` content, cookies, and referrer.
 -	We get the credentials directly from `Keychain Access` by executing `security`.
 
 That should be enough instructions to modify the script if need be; consult the top-most section titled `Constants` for stuff to chain if need be.
