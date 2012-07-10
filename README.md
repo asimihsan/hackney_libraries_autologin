@@ -33,4 +33,4 @@ This tool logs into their web portal when needed; your connection will die for o
 -	If we need to log in, HTTP POST to `https://securelogin.arubanetworks.com/cgi-bin/login` with appropriate `x-url-form-encoded` content, cookies, and referrer.
 -	We get the credentials directly from `Keychain Access` by executing `security`.
 
-That should be enough instructions to modify the script if need be; consult the top-most section titled `Constants` for stuff to chain if need be.
+That should be enough instructions to modify the script if need be; consult the top-most section titled `Constants` for stuff to change if need be.
