@@ -4,7 +4,7 @@
 
 CLR James library offers free Wi-Fi. However, every hour my Mac gets booted off; I suspect they either require explicit re-login to demonstrate client liveliness or just don't support Macs.
 
-This tool logs into their web portal when needed; your connection will die for on average 10 seconds before the tool kicks in.
+This tool logs into their web portal when needed; your connection will die for on average 5 seconds before the tool kicks in.
 
 ## Requirements
 
@@ -24,6 +24,7 @@ This tool logs into their web portal when needed; your connection will die for o
 	-	Set the password to your PIN.
 -	Quit the `Keychain Access` application.
 -	Execute `./src/auto_login.py`.
+-	If you want to immediately attempt to login rather than wait for the script, press ENTER.
 
 ## How it works
 
