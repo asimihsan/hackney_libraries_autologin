@@ -2,17 +2,21 @@
 
 ## Introduction
 
-CLR James library offers free Wi-Fi. However, every hour minutes my Mac gets booted off; I suspect they either require explicit re-login to demonstrate client liveliness or just don't support Macs.
+CLR James library offers free Wi-Fi. However, every hour my Mac gets booted off; I suspect they either require explicit re-login to demonstrate client liveliness or just don't support Macs.
 
 This tool logs into their web portal when needed; your connection will die for on average 10 seconds before the tool kicks in.
 
 ## Requirements
 
--	Python with [`pip`](http://www.pip-installer.org/en/latest/installing.html).
+-	Python with [pip](http://www.pip-installer.org/en/latest/installing.html).
+-	(optional, recommended) install [virtualenv](http://www.virtualenv.org/en/latest/index.html) and [virtualenvwrapper](http://www.doughellmann.com/projects/virtualenvwrapper/).
 
 ## Quickstart
 
 -	Clone the repo.
+-	(if you installed virtualenv and virtualenvwrapper):
+	-	`mkvirtualenv hackney_libraries_autologin`
+	-	`workon hackney_libraries_autologin`
 -	`pip install -r requirements.txt`
 -	Launch the `Keychain Access` application.
 -	Add a new account called `Hackney Libraries`.
